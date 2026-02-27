@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticate</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="auth">
+    <div class="auth__container">
+        <form class="auth-form">
+            <h1 class="auth-form__title">Neural Oracle 🔮</h1>
+            <div class="auth-form__field">
+                <label class="auth-form__label" for="access-key">Access Key</label>
+                <input class="auth-form__input" type="text" id="access-key" name="access_key" placeholder="Enter your access key" required minlength="8" maxlength="255" pattern="[A-Za-z0-9_-]{8,255}" title="Use 8-255 characters: letters, numbers, hyphen, underscore.">
+                <p class="auth-form__help">8–255 chars. Allowed: letters, numbers, hyphen, underscore.</p>
+            </div>
+            <p class="auth-form__error"></p>
+            <button class="auth-form__button" type="submit">Authenticate</button>
+        </form>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv
+env/
+
+# Environment variables
+.env
+
+# Databases
+*.db
+*.sqlite3
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS-specific
+.DS_Store
+
+# Logs
+*.log
+
+# Temp files
+*.swp
+*~

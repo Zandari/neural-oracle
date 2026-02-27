@@ -1,0 +1,30 @@
+[project]
+name = "llm-chat"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Zandari",email = "kirillgluhih1@yandex.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard] (>=0.133.1,<0.134.0)",
+    "aiosqlite (>=0.22.1,<0.23.0)",
+    "aiohttp (>=3.13.3,<4.0.0)",
+    "uvicorn (>=0.41.0,<0.42.0)",
+    "bcrypt (>=4.0.0,<5.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+packages = [
+    {include="app"},
+    {include="scripts"},
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+user-manager = "scripts.cli:main"
