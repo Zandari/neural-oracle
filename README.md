@@ -1,4 +1,5 @@
 # Neural Oracle 🔮
+<img src="https://github.com/Zandari/neural-oracle/blob/master/images/screenshot.png?raw=true" alt="screenshot" width="500" />
 
 Проект Neural Oracle - это интерактивный чат-бот, который использует нейронные сети для генерации ответов на вопросы пользователей. Провайдером LLM-моделей является OpenRouter.Разработан в рамках тестового задания.
 
